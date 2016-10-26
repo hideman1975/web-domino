@@ -1,0 +1,428 @@
+ {
+margin: 0;
+padding: 0;
+outline: none;
+} 
+/* .alert {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+} */
+
+footer{
+background: blue;
+clear: both;
+}
+
+header{
+background: blue;
+clear: both;
+}
+
+body {
+	/*background: url("../img/otom.jpg");*/
+	/* font: 12px Araial, Tahoma, sans-serif; */
+	/*background-color: #FFDC30;*/
+	/*background: #5D51FF;*/
+}
+
+/*h3 {
+	font-size: 18px;
+	color: #515151;
+	padding: 5px;
+	} 
+
+h1 {
+	font-size: 6px;
+	color: #515151;
+	margin:0px 0px 0px 0px;
+	padding: 5px; 
+	}*/
+
+.stol { 
+    width: 100%; 
+    height: 600px;
+   
+   /* background: #9affe8;*/
+    background-image: url('../img/dvor/dvor04.jpg');
+    padding: 5px;
+    padding-right: 25px; 
+    padding-left: 25px; 
+    /*border: solid 1px orange; */
+    /*float: right;*/
+   }
+.topGamer { 
+	width: 100%; 
+    height: 21%;
+	/*background: #5D51FF; */
+	/*border: 1px dashed #abab9a; */
+	padding: 5px; 
+	font: 6pt Tahoma;
+	color:#2c2c2c;
+	/*float: right;*/
+}
+   .gamer { 
+	width:15%; 
+    height: 47%;
+	/*background: #5D51FF; */
+	/*border: 1px dashed #abab9a; */
+	margin:0px 0px 0px 0px;
+	padding: 5px; 
+	font: 6pt Tahoma;
+	color:#2c2c2c;
+	float: left;
+}
+
+.systemMessage {
+width: 60%; 
+height: 16%;
+background: #FFB71C; 
+/*border: 1px dashed #abab9a; */
+padding: 5px; 
+font: 12pt Tahoma;
+color:#282CFF;
+border: 2px solid #0026FF;
+border-radius: 5px 5px 5px 5px;	
+float: left;
+/*margin-left: 10px;*/
+margin-top: 10px;
+/*position: absolute;
+left: 20px;
+bottom: 0px;*/
+}
+
+#buttonDiv{
+float: left;
+/*width: 250px; */
+/*background: #FFB71C; */
+margin: 20px;
+/*position: relative;
+left: 20px;
+bottom: 0px;*/
+}
+
+#mini_point2 {
+width: 100%; 
+height: 15%;
+/*border: 1px dashed #abab9a; */
+/*background: #red; */
+
+}
+
+#mini_point4 {
+width: 100%; 
+height: 15%;
+/*border: 1px dashed #abab9a; 
+background: #red;*/
+}
+
+#mini_point3 {
+/*width: 100%; */
+height: 33%;
+/*border: 1px dashed #abab9a; 
+background: #red;*/
+}
+
+
+#back_fish{
+height: 90%;
+margin-left: 5px;
+}
+
+#topGamer{
+/*height: 95%;*/
+height:115px;
+float: left; 
+text-align:center;
+/*border: 1px dashed #abab9a; */
+}
+
+.bottomGamer { 
+	width: 100%; 
+    height: 20%;
+	/*background: #FF4451; */
+	/*border: 1px dashed #abab9a; */
+	padding: 5px; 
+	font: 6pt Tahoma;
+	color:#2c2c2c;
+	clear: both;
+}
+	
+
+	.fish { 
+	width: 70%;
+    height: 47%;
+	border-radius: 20px 20px 20px 20px;	
+	/*background: #FFC260; */
+	background-image: url('../img/table/table02.gif');
+	/*border: 1px dashed #abab9a; */
+	padding: 5px; 
+	/*font: 6pt Tahoma;
+	color:#2c2c2c;*/
+	float: left;
+	border: 3px solid #873E0E;
+}
+
+.fishka { 
+	height: 90%;
+	padding: 5px; 
+	float: left;
+}
+
+.Konfishka { 
+	height: 25%;
+	/*padding: 16px 16px 16px 16px; */
+	margin:0px 18px 0px 18px;
+	float: left;
+	transform: rotate(-90deg);
+
+}
+
+.KonfishkaTurn { 
+	height: 25%;
+	/*padding: 16px 16px 16px 16px; */
+	margin:0px 18px 0px 18px;
+	float: left;
+	transform: rotate(90deg);
+
+}
+
+.KonfishkaDubl { 
+	height: 25%;
+	margin:0px 0px 0px 0px;
+	/*padding: 10px 16px 1px 16px; */
+	float: left;
+	/*transform: rotate(90deg);*/
+
+}
+
+.imgCenter {text-align:center;}
+
+.bgimg {
+    background-image: url('table/table02.gif');
+}
+
+
+.faces{
+border: 3px solid #53da3f;
+border-radius: 20px 20px 20px 20px;	
+
+}
+.sidePoint{
+	height: 15%;
+	margin:0px 0px 0px 0px;
+	padding: 0px;
+    text-align: center;
+   /* border: 1px dashed #abab9a; */
+}
+.points{
+	/*margin-left: 40%; /* Отступ слева 
+    margin-right: 30%;  Отступ справа */
+   /* background: #fc0; /* Цвет фона */
+    padding: 0px;
+   /* width: 30%;*/
+    /*height: 25%;*/
+	font-size: 22px;
+	margin:0px 0px 0px 0px;
+    text-align: center;
+    color: #0026FF;
+    background: #FFB71C;
+    border: 2px solid #0026FF;
+    border-radius: 5px 5px 5px 5px;	
+
+}
+
+/*#PassButton {
+
+position:absolute;
+left: 200px;
+bottom: 0px;
+}*/
+
+
+/*эксперимент с драг эн дроп*/
+#block {
+position:relative;
+width: 100px; 
+height: 100px;
+border: 3px solid #53da3f;
+margin: 10px;
+float: left;
+}
+
+.dropInMe {
+position:relative;
+width: 65px; 
+height: 58px;
+border: 1px solid #53da3f;
+background:  #fc0;
+margin: 0px 3px 0px 3px;
+float: left;
+border-radius: 20px 20px 20px 20px;	
+opacity: 0.5;
+}
+
+
+/*______________________________*/
+/*стили для модальных окон*/
+#b {
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:none;
+background: grey;
+z-index:1;
+}
+
+#a {
+border:1px solid black;
+position:fixed;
+background: #eff7ff;
+z-index:3;
+display:none;
+}
+
+#windows {
+/*margin: 20%;*/
+padding:5px;
+width: 500px;
+height: 300px;
+border: 2px solid blue; 
+}
+
+a.pages
+{
+background: #97cdff;
+color: white;
+padding: 4px;
+text-decoration: none;
+}
+
+a:hover.pages
+{
+background: red;
+color: white;
+padding: 4px;
+text-decoration: none;
+}
+
+#modal{
+margin-left: 1%; 
+height:100%;
+}
+
+/*для модальных окон закрыто*/
+
+/*для вращения*/
+
+.rotateImage {
+
+    animation: spin 1s linear infinite;
+    animation-play-state: running;
+
+}
+
+@keyframes spin {
+
+    to {
+
+        transform: rotate(1turn);
+
+    }
+
+}
+
+#domino-bank{
+margin: 3px 3px 3px 30%;
+height: 95%;
+
+}
+
+/* a {
+ text-decoration: none;
+} */
+/* .b3radius{
+
+borde-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+-moz-border-radius: 3px;
+} */
+
+/* h1 {
+	font-size: 18px;
+	color: #515151;
+	
+	} */
+
+/* #page_align{
+width: 1000px;
+background: green;
+margin:35px auto;
+box-shadow: 0px 1px 3px #DDDDDD;
+-webkit-box-shadow: 0px 1px 3px #DDDDDD;
+-o-box-shadow: 0px 1px 3px #DDDDDD;
+-moz-box-shadow: 0px 1px 3px #DDDDDD;
+overflow: hidden;
+} */
+
+/* #tables{
+width: 700px;
+border-bottom: solid 3px #98CA60;
+background: #FFFACD;
+float: left;
+}
+
+aside{
+width: 270px;
+float: left;
+background: #FFFACD;
+padding:15px;
+}
+.clr{
+clear: both;
+}
+#header {
+width: 1000px;
+height: 80px;
+background: red;
+}
+
+footer{
+background: blue;
+clear: both;
+}
+
+#header_nav{
+width: 1000px;
+height: 35px;
+border-bottom: solid 3px #98CA60;
+}
+
+#header_nav ul{
+list-style: none;
+
+}
+
+#header_nav ul li{
+float: left;
+border-right: solid 1px #F1F1F1;
+
+}
+
+#header_nav ul li a{
+color: #868686;
+display: block;
+line-height: 35px;
+padding:0 7px;
+
+}
+
+#header_nav ul li a:hover{
+background: rgba(0,0,0,.05)
+
+} 

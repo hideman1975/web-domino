@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>  Домино </title>
+    <meta charset="utf-8">
+	<link rel="shortcut icon" href="img/favicon.gif" type="images/gif">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"> 
+    <script src="js/header.js"></script>
+     	
+</head>
+
+<body id="body">
+
+<!-- <div class="page-header" >
+  <h1>Домино <small>Игровой портал</small></h1>
+</div> -->
+
+<div class = "stol">
+	
+	<div  class = "topGamer">
+		
+		<div style="height:115px;">
+	  	 <div style="margin-left: 40%;"> 
+		
+		  <div style="float: left; height:115px;"><img id = "barat" src="img/face2.png" height=100%></div>
+		  <div id = "topGamer">
+		  <div class = "points"><h4>Барат</h4></div>
+		  <div id = "point3" class = "points">0</div>
+		  <div id = "mini_point3"></div>
+		  </div>
+		
+	     </div>
+		</div>
+	</div>
+	
+	<div class = "gamer">
+		<div class = "points"><h4>Хайзенберг</h4></div>
+		<img id = "haizen" src="img/face6.png" alt="" height=50%>
+		<div id = "point2" class = "points">0</div>
+		<div id = "mini_point2"></div>
+	</div>
+	
+	<div id = "fish" class = "fish"></div>
+	
+	<div class = "gamer">
+		<div class = "points"><h4>Тайсон</h4></div>
+		<img id = "tyson" src="img/face1.png" alt="" height=50%>
+		<div id = "point4" class = "points" >0</div>
+		<div id = "mini_point4"></div>
+	</div>
+	
+	
+	<div class = "bottomGamer">
+		
+		<div style="height:115px;">
+	  	 <div style="margin-left: 5%;"> 
+		
+		<div  style="float: left; height:115px;" >
+		  <a href="http://манаенко.рф" target="_blank"><img id = "monk" src="img/face7.png" height=95%></a>
+		  </div>
+		  <!-- <div id = "block" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+		  <div id='mig_label' style="float: left; text-align:center;"><h4>Андрей</h4>
+		  <div id = "point1" class = "points">0</div>
+		  </div>
+		  <div id = "myFish" style="height:115px;"></div>
+		     </div>
+		</div>
+	</div>
+	
+	<div id = 'systemMessage' class = 'systemMessage'></div>
+	<div id = 'buttonDiv' class = 'buttonDiv'>
+	<button id = "goButton"   class="btn btn-default" onclick="rotateBank()">Новый кон</button>
+	<button id = "PassButton" class="btn btn-default" onclick="IamPass()">Пропускаю ход</button>
+
+	</div>
+
+	<script src="libs/jquery/jquery-3.1.0.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/jquery/jQueryRotate.js"></script>
+		
+	
+	<!-- <button class="btn btn-default" onclick="goat()">рыба подготовка</button> -->
+	
+
+<!-- </div>  -->
+	<!-- <a href="#" onclick="showA();" class="pages">Открыть</a> -->
+
+	<div id="a"><div id="windows">
+		<a href="#" onclick="hideA();" class="pages" style="float: right;">Закрыть</a>
+		 <div id = "modal"></div>
+		
+	</div></div>
+
+	<div id="b"></div>
+<!-- _____________________________ -->
+	<script src="js/main.js"></script>
+	
+		
+ 
+
+</div> <!-- стол закрылся -->
+ 
+ </body>
+ 
+ </html>
