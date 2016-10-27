@@ -54,7 +54,6 @@ this.ITurn = function(left,right){
 			 } else	{//иначе пропускаем ход
 				 
 				 systemMessage(this.name + ": Пропускаю ход. Нет-" + game.left + "-"+game.right);
-				 //console.log(this.name + " Пропускает ход. На руках -" + this.sdano);
 				 game.propuskXoda ++;
 				 if(game.propuskXoda == 4 ) {
 					 					
@@ -81,15 +80,12 @@ if(left == game.left || left == game.right || right == game.left || right == gam
 	//и если приоритет больше выбраного ранее
 	if(forXod == null || this.sdano[forXod][2] < ves){
 	forXod = i;
-	//console.log(this.name + " на выброс-"+ this.sdano[forXod]);	
-		}	
-
-			 } //else {
-			//  	console.log(i + " раза"+ this.name + " не нашёл " + game.left + "ни " + game.right);
-			// }
+			}	
 
 		}
-//console.log("Лучший выбор для " + this.name + " камень "+ this.sdano[forXod]);
+	
+	}
+
 return forXod;
 }
 
@@ -112,12 +108,8 @@ if(left == game.left || right == game.left){
 					this.classOfelem = "Konfishka";
 					game.left = left;
 					}		
-				//find = true;
-				//messSimply("<br/><h3>"+ this.name +" Решил поставить слева - "+ this.sdano[i] +" стиль фишки - " + this.classOfelem + "</h3>");
 				this.place = 1; //слева
-				//return i;
-				//break;
-			} else {
+				} else {
 					if (left == game.right || right == game.right){
 						if (left == game.right){
 							this.classOfelem = "Konfishka";
@@ -126,14 +118,11 @@ if(left == game.left || right == game.left){
 								this.classOfelem = "KonfishkaTurn";
 								game.right = left;
 								}
-				//find = true;
-				//messSimply("<br/><h3>"+ this.name +" Решил поставить справа - "+ this.sdano[i] +" стиль фишки - " + this.classOfelem + "</h3>");
+				
 				this.place = 2; //справа
-				//return i;
-
-
-} //Закрывается BestXod
-}
+			
+		} //Закрывается BestXod
+	}
 }
 
 //Новая функция только для хода
@@ -175,17 +164,7 @@ this.schet = function(){
 			systemMessage(this.name + ' оштрафован на ' + sumThisKon);
 		}
 	}
-//_____20 октября 2016г ______записывать в счёт только больше 12
-	
-		// if (sumThisKon > 12 || this.totalSum > 12){
-		// 	this.totalSum = this.totalSum + sumThisKon;
-		// 	systemMessage(this.name + ' в гору плюс ' + sumThisKon);
-		// } else systemMessage(this.name + ' очков меньше 13 ' + sumThisKon);
-		
 
-	// var elem = document.getElementById(this.idOfGamer);
-	// elem.innerHTML = this.totalSum;
-	
 	return sumThisKon;
 	
 	}
@@ -234,11 +213,7 @@ var childNodes = div.childNodes;
 		div.removeChild(childNodes[0]);
 		qnty --;
 		}
-}
-
-
-
-
+	}
 
 } //Закончился конструктор юзеров
 
@@ -269,20 +244,8 @@ this.oneone = function()  {
 			}
 		}
 	
-// this.myCart = function()  {
-// 		messSimply("</br> <h3> myCart: Я -" + this.name + " мои фишки </h3>" + this.sdano);
-// 	}
-	
-// this.messBank = function(){
-// 	var div = document.createElement('div'); //создаём его (div - это тип тэга)
-// 	div.innerHTML = "</br> <h4>" + game.left + "  " + game.right + "</h4> "; //создаём содержимое
-// 	kon.appendChild(div); //включаем в состав какого-то блока	
-		
-// 	}
-
 
 this.schet = function(){
-		//this.inHand = 7;
 		var sumThisKon = 0;
 		var inHand = 0;
 		var indexInHand;
@@ -294,23 +257,13 @@ this.schet = function(){
 			} 
 		}
 
-
 	if(inHand == 1){ 
-			//console.log(this.name + " одна фишка-" + this.sdano[indexInHand]);
-		if(this.sdano[indexInHand][2] ==25 || this.sdano[indexInHand][2] ==38)	{
+			if(this.sdano[indexInHand][2] ==25 || this.sdano[indexInHand][2] ==38)	{
 			sumThisKon = sumThisKon + this.sdano[indexInHand][2];
 			systemMessage(this.name + ' оштрафован на ' + sumThisKon);
 		}
 	}	
 
-// if (sumThisKon > 12 || this.totalSum > 12){
-// 			this.totalSum = this.totalSum + sumThisKon;
-// 			systemMessage(this.name + ' в гору плюс ' + sumThisKon);
-// 		} else systemMessage(this.name + ' очков меньше 13 ' + sumThisKon);
-		
-
-	// var elem = document.getElementById(this.idOfGamer);
-	// elem.innerHTML = "<h3>" + this.totalSum + "</h3>";
 	return sumThisKon;
 	}
 
@@ -333,28 +286,24 @@ this.userXod = function(ind){
 	return false;
 	} else {
 		if((left == game.left && right ==game.right)|| (left == game.right && right ==game.left)){
-			//console.log("Куда ходить ?");
+			
 		}
 
 		//если выбор сделан драг-дропом то перескочить
 		if(!this.useDragDrop){this.myDecision(ind)};
 		this.useDragDrop = false;
 		dropInMeHide();
-		
-		
+			
 	//__________________________________
 	myFish.removeChild(fishToDelete); //удалить картинку фишки
 	this.addFishToKon(left,right);
-	//messSimply("</br> <h3> Я -" + this.name + " хожу  " + this.sdano[indOfSdano]+ "</h3>");
 	systemMessage(this.name + " сходил - " + left + " " + right);
 	if (this.place !== 1){
 	game.situation.unshift(this.sdano[indOfSdano]); //если слева вставить в начало кона
 	} else game.situation.push(this.sdano[indOfSdano]); //если справа в конец кона
 		
 	this.sdano[indOfSdano] = null; //Удалять нельзя, сбивается индексация
-	//this.inHand = this.inHand - 1;
 	this.inHand = howMuchIsTheFish("myFish");
-	//console.log(this.inHand);
 	game.propuskXoda = 0;
 	if (this.inHand == 0){
 	window.clearInterval(game.migInterval);
@@ -599,8 +548,7 @@ function endOfKon(fish)
 
 		}
 
-	//console.log(looser.name + " набрал больше всех, в гору  " + TotSum);
-	systemMessage(looser.name + ' набрал больше всех, в гору ' + TotSum);
+	systemMessage(looser.name + ' набрал больше всех, плюс ' + TotSum);
 	looser.totalSum = looser.totalSum + TotSum;
 
 	} else { //если не рыба
@@ -611,7 +559,7 @@ function endOfKon(fish)
 		konSum = game.gaymers[i].schet();
 		if (konSum > 12 || game.gaymers[i].totalSum > 12){
 			game.gaymers[i].totalSum = game.gaymers[i].totalSum + konSum;
-			systemMessage(game.gaymers[i].name + ' в гору плюс ' + konSum);
+			systemMessage(game.gaymers[i].name + ' в плюс ' + konSum);
 		} else systemMessage(game.gaymers[i].name + ' очков меньше 13 ' + konSum + ', не зачисляются');
 
 	   }
@@ -641,7 +589,6 @@ function newGame(){
 	game.beginKon();
 }
 
-//Думаю надо убрать в объект LiveUser
 function addFish(){
 
 	//получаем доступ к блоку моих фишек
@@ -676,7 +623,6 @@ function addFish(){
 
 //пропускаю ход
 function IamPass(){
-	//messSimply("<br> <h3>Я " + game.nextTurn.name + " пропускаю ход </h3>");
 	systemMessage(game.nextTurn.name + " пропускаю ход. Нет-" +game.left+"-"+game.right);
 	game.nextTurn = game.nextTurn.next;
 	game.circleOfLife();
@@ -815,13 +761,10 @@ function beforeUserXod(side,idOfChoice){
 	var leftPoint = myFishPoint[0]; 
 	var rightPoint = myFishPoint[1];	
 //проверка на правильность хода
-// if (leftPoint !== game.left && leftPoint !== game.right && rightPoint !== game.left && rightPoint !== game.right)
-// 	{
+
 if(side == "left" && leftPoint != game.left && rightPoint != game.left){	
-	//messSimply("</br> <h3> Не правильно ставишь слева </h3>");
 	return false;
 } else if (side == "right" && leftPoint != game.right && rightPoint != game.right){
-	//messSimply("</br> <h3> Не правильно ставишь справа. </h3>");
 	return false;
 	} else
 
@@ -891,7 +834,7 @@ var elem = document.createElement('img');
 //systemMessage('Очки: одна 0-0 даёт штраф - 25 очков, 6-6 даёт 50 очков');
 systemMessage('Сделать ход - двойное нажатие или перетащить на место вставки.');
 systemMessage('Правила: каждый сам за себя. До 101 очка. Одна 0:0 25 очков, 6:6 50 очков');
-systemMessage('Новости 24.10.2016: при рыбе очки игроков суммируются в счёт набравшего больше всех');
+systemMessage('При рыбе очки игроков суммируются в счёт набравшего больше всех');
 this.rotate = imageRotation();
 setTimeout("clearInterval(rotate)",5000);
 setTimeout("newGame()",5000);
