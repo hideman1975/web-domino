@@ -23,8 +23,9 @@ clear: both;
 
 body {
 	/*background-image: url('../img/dvor/dvor04.jpg') repeat-y;*/
-	
+overflow: hidden;	
  background: url(../img/dvor/dvor04.jpg) repeat-x;
+ /*background: #9affe8;*/
     /*-moz-background-size: 100%; 
     -webkit-background-size: 100%;  Safari 3.1+ и Chrome 4.0+ 
     -o-background-size: 100%; 
@@ -38,30 +39,20 @@ body {
    max-width: 1500px;*/
 	/*background: url("../img/otom.jpg");*/
 	/* font: 12px Araial, Tahoma, sans-serif; */
-	/*background-color: #FFDC30;*/
+	/*background-color: #9affe8;*/
 	/*background: #5D51FF;*/
 }
 
-/*h3 {
-	font-size: 18px;
-	color: #515151;
-	padding: 5px;
-	} 
-
-h1 {
-	font-size: 6px;
-	color: #515151;
-	margin:0px 0px 0px 0px;
-	padding: 5px; 
-	}*/
 
 .stol { 
    /* width: 100%; */
+   /* overflow: hidden;	*/
     margin: 20px auto;
     height: 600px;
-   min-width:790px;
+   min-width:490px;
    max-width: 1400px;
-   /* background: #9affe8;*/
+   
+
     /*background-image: url('../img/dvor/dvor04.jpg');*/
     padding: 5px;
     padding-right: 25px; 

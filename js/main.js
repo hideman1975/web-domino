@@ -603,7 +603,7 @@ function addFish(){
 	elem.id = "myFishka0" + i;
 	elem.indOfSdano = i;
 
-	elem.ondblclick = function() {
+	elem.onclick = function() {
 		var resultOfXod;
 		//если ступил вернёт нул и ничего делать не будем
 		resultOfXod = game.nextTurn.userXod(this.id);
@@ -832,7 +832,7 @@ var elem = document.createElement('img');
 	elem.id = "domino-bank";
 	fish.appendChild(elem); 
 //systemMessage('Очки: одна 0-0 даёт штраф - 25 очков, 6-6 даёт 50 очков');
-systemMessage('Сделать ход - двойное нажатие или перетащить на место вставки.');
+systemMessage('Сделать ход - одинарное нажатие или перетащить на место вставки.');
 systemMessage('Правила: каждый сам за себя. До 101 очка. Одна 0:0 25 очков, 6:6 50 очков');
 systemMessage('При рыбе очки игроков суммируются в счёт набравшего больше всех');
 this.rotate = imageRotation();
